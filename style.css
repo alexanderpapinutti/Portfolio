@@ -1,0 +1,65 @@
+.top-side {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.portfolio-link{
+    width: 100px;
+    color: antiquewhite;
+}
+
+.about-link {
+     width: 100px;
+    color: antiquewhite;
+}
+
+.middle-side {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.welcome-text h1{
+    font-family: monospace;
+    font-size: 5rem;
+}
+
+.profession-text {
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+.other-website-links {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.github{
+    width: 40px;
+}
+
+.linkedin{
+    width: 40px;
+}
+
+.github {
+    width: 40px; 
+}
+
+.bottom-side {
+    height: 10vh;
+}
+
+body {
+    background: url('images/background-image.jpeg');
+}
+
+.container {
+    max-width: 100%;
+}
