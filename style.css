@@ -1,30 +1,61 @@
-.top-side {
-    height: 20vh;
+#index-page {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.portfolio-link{
-    width: 100px;
+.top-side {
+    height: 10vh;
+    width: 100%;
+}
+.index-link{
+    width: 250px;
     color: antiquewhite;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+.index-link:hover {
+    cursor: pointer;
+}
+
+.portfolio-link {
+    width: 250px;
+    color: antiquewhite;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+.portfolio-link:hover {
+    cursor: pointer;
 }
 
 .about-link {
-     width: 100px;
+    width: 250px;
     color: antiquewhite;
+    font-family: monospace;
+    font-size: 2rem;
+
+}
+
+.about-link:hover {
+    cursor: pointer;
 }
 
 .middle-side {
     height: 70vh;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: antiquewhite;
 }
 
-.welcome-text h1{
+.welcome-text h1 {
     font-family: monospace;
     font-size: 5rem;
 }
@@ -40,20 +71,62 @@
     justify-content: center;
 }
 
-.github{
+.github {
     width: 40px;
 }
 
-.linkedin{
+.linkedin {
     width: 40px;
 }
 
 .github {
-    width: 40px; 
+    width: 40px;
 }
 
 .bottom-side {
-    height: 10vh;
+    height: 20vh;
+    width: 370px;
+    display: flex;
+    justify-content: center space-between;
+    border-top: 2px solid antiquewhite;
+    border-top-width: thin;
+
+}
+
+.separator{
+    color: antiquewhite;
+    font-size: 2rem;
+    
+}
+
+#about-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: antiquewhite;
+
+}
+
+#portfolio-page {
+    height: 100vh;
+}
+
+.projects-div{
+    height: 80vh;
 }
 
 body {
@@ -62,4 +135,8 @@ body {
 
 .container {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

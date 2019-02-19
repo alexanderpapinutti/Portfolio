@@ -8,29 +8,89 @@
 </head>
 
 <body class="container">
-    <div class="top-side">
-        <div class= "about-link">
-            <p>About</p>
-        </div>
-        <div class= "portfolio-link">
-            <p>Portfolio</p>
-        </div>
-    </div>
-    <div class="middle-side">
-        <div class= "welcome-text">
-            <h1>Hello, I'm Alex!</h1>
-        </div>
-        <div class= "profession-text">
-            <p>Junior Full Stack Web Developer</p>
-        </div>
-        <div class= "other-website-links">
-            <div>
-                <a href="https://github.com/alexanderpapinutti"><img  class="github" src="images/github.png"></a>
-                <a href="https://www.linkedin.com/in/alexander-papinutti/"><img  class="linkedin" src="images/linkedin.png"></a>
+    <div id="app">
+        <div id="index-page" v-if="currentView == 'index'">
+            <div class="top-side">
+
+            </div>
+            <div class="middle-side">
+                <div class="welcome-text">
+                    <h1>Hello, I'm Alex!</h1>
+                </div>
+                <div class="profession-text">
+                    <p>Junior Full Stack Web Developer</p>
+                </div>
+                <div class="other-website-links">
+                    <div>
+                        <a href="https://github.com/alexanderpapinutti"><img class="github" src="images/github.png"></a>
+                        <a href="https://www.linkedin.com/in/alexander-papinutti/"><img class="linkedin" src="images/linkedin.png"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bottom-side">
+                <div class="index-link">
+                    <p v-on:click="setCurrentView('index')">Home |</p>
+                </div>
+
+
+                <div class="about-link">
+                    <p v-on:click="setCurrentView('about')">About |</p>
+                </div>
+
+                <div class="portfolio-link">
+                    <p v-on:click="setCurrentView('porfolio')">Portfolio </p>
+                </div>
             </div>
         </div>
-        
+        <div id="about-page" v-if="currentView =='about'">
+            <div class="about-me">
+                <div class="text">
+                    <p >
+                        Three years ago I stumbled upon Machine Learning, which opened for me a gate of an unprecedented amount of curiosity. I joined the Vrije Universiteit of Amsterdam in 2017, but I did not find myself enjoying the academic setting, so I decided to go for a more direct approach. For me the best way to learn is "hands on", which coincidentally is the philosphy of the coding bootcamp I attended from September until the current moment. By creating simulations of real customers we were asked to create different projects in an agile environment, involving some of the leading tools used to build the front and back end of the Internet:
+                        Javascript, HTML 5, CSS 3, Vue.js, Spring Boot, Java 8.
+                        I now await eager to apply my newly gained knowledge and to be challenged with new puzzles to solve. If you can't find the peace of the puzzle, you can contact me at alexpapinutti@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-side">
+                <div class="index-link">
+                    <p v-on:click="setCurrentView('index')">Home |</p>
+                </div>
+
+
+                <div class="about-link">
+                    <p v-on:click="setCurrentView('about')">About |</p>
+                </div>
+
+                <div class="portfolio-link">
+                    <p v-on:click="setCurrentView('porfolio')">Portfolio </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="portfolio-page" v-if="currentView =='porfolio'">
+            <div class="projects-div">
+            
+            </div>
+            <div class="bottom-side">
+                <div class="index-link">
+                    <p v-on:click="setCurrentView('index')">Home |</p>
+                </div>
+
+
+                <div class="about-link">
+                    <p v-on:click="setCurrentView('about')">About |</p>
+                </div>
+
+                <div class="portfolio-link">
+                    <p v-on:click="setCurrentView('porfolio')">Portfolio </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="bottom-side"></div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
 </html>
